@@ -178,6 +178,6 @@ SHRP_REC := /dev/block/platform/bootdevice/by-name/recovery
 SHRP_NOTCH := true
 SHRP_DARK := true
 SHRP_NO_SAR_AUTOMOUNT := true
-SHRP_EXPRESS := true
+#SHRP_EXPRESS := true
 SHRP_STATUSBAR_RIGHT_PADDING := 40
 SHRP_STATUSBAR_LEFT_PADDING := 40
