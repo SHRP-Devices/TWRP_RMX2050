@@ -19,12 +19,17 @@
 # Inherit from phoenix device
 $(call inherit-product, device/realme/RMX2050/device.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+
+# Inherit some common twrp stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX2050
-PRODUCT_NAME := omni_RMX2050
+PRODUCT_NAME := twrp_RMX2050
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := narzo 20a
 PRODUCT_MANUFACTURER := realme
