@@ -32,9 +32,6 @@ on fs
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     write /sys/class/power_supply/usb/otg_switch 1
 
-service init-recovery-post-boot /system/bin/init.recovery.post-boot.sh
-    user root
-    group root
-    disabled
-    oneshot
-    seclabel u:r:recovery:s0
+on boot
+    setprop sys.usb.config adb
+	start health-hal-2-1

@@ -25,6 +25,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 DEVICE_PATH := device/realme/RMX2050
 LOCAL_PATH := device/realme/RMX2050
 
+# Dimen
+TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_WIDTH := 720
+
 # Qcom standerd Decryption
 PRODUCT_PACKAGES += \
     qcom_decrypt \
@@ -33,11 +37,15 @@ PRODUCT_PACKAGES += \
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(COMMON_PATH)
+
 # fastbootd
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.0-impl-mock \
-    android.hardware.fastboot@1.0-impl-mock.recovery
-	
+	fastbootd \
+    android.hardware.fastboot@1.0-impl-mock
+
 # Additional binaries & libraries needed for recovery
 TARGET_RECOVERY_DEVICE_MODULES += \
     ashmemd_aidl_interface-cpp \

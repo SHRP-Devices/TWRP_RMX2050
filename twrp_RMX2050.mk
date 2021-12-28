@@ -21,7 +21,6 @@ $(call inherit-product, device/realme/RMX2050/device.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Inherit some common twrp stuff.
@@ -33,7 +32,3 @@ PRODUCT_NAME := twrp_RMX2050
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := narzo 20a
 PRODUCT_MANUFACTURER := realme
-
-# Dimen
-TARGET_SCREEN_HEIGHT := 1600
-TARGET_SCREEN_WIDTH := 720
