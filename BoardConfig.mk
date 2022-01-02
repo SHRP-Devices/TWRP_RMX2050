@@ -158,8 +158,6 @@ TW_SKIP_COMPATIBILITY_CHECK := true
 TW_INCLUDE_LOGICAL := my_product my_engineering common_preload special_preload
 TW_OZIP_DECRYPT_KEY := 0000
 TW_DEVICE_VERSION :=BY SIDDK
-TW_Y_OFFSET := 50
-TW_H_OFFSET := -50
 TW_INCLUDE_FUSE_EXFAT := true
 TW_INCLUDE_FUSE_NTFS := true
 TWRP_INCLUDE_LOGCAT := true
@@ -167,3 +165,20 @@ TARGET_USES_LOGD := true
 TW_EXLUCDE_APEX := true
 TW_OVERRIDE_SYSTEM_PROPS := \
     "ro.build.date.utc;ro.build.product;ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental;ro.product.device=ro.product.system.device;ro.product.model=ro.product.system.model;ro.product.name=ro.product.system.name"
+	
+# SHRP
+SHRP_PATH := device/realme/RMX2050
+SHRP_MAINTAINER := SIDDK
+SHRP_DEVICE_CODE := RMX2050
+SHRP_REC_TYPE := Treble
+SHRP_OFFICIAL := true
+SHRP_DARK := true
+SHRP_DEVICE_TYPE := A/B
+SHRP_NOTCH := true
+SHRP_EDL_MODE := 1
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_REC := /dev/block/by-name/recovery
+INC_IN_REC_MAGISK := true
