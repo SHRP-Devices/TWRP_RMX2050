@@ -157,6 +157,7 @@ TW_NO_SCREEN_BLANK := true
 TW_SKIP_COMPATIBILITY_CHECK := true
 TW_INCLUDE_LOGICAL := my_product my_engineering common_preload special_preload
 TW_OZIP_DECRYPT_KEY := 0000
+TW_DEVICE_VERSION :=BY SIDDK
 TW_Y_OFFSET := 50
 TW_H_OFFSET := -50
 TW_INCLUDE_FUSE_EXFAT := true
